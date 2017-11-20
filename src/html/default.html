@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+
+	<head>
+		<title>scorm</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css" media="screen">
+			html,
+			body {
+				height: 100%;
+				background-color: #999999;
+			}
+			
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#flashContent,.table {
+				width: 1024px;
+				height: 600px;
+			}
+			.table{
+				display: table;
+				height: 100%;
+				margin: auto;
+				overflow: hidden;
+			}
+			.table-cell{
+				display: table-cell;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<script language="JavaScript" type="text/javascript" src="../scripts/APIWrapper.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../scripts/SCOFunctions.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../scripts/rightclick.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		function goInit() {
+			RightClick.init();
+			loadPage();
+			return thisframe + "#" + suspendstr + "#" + currentstatus + "#" + myscore + "#" + currentProgress;
+		}
+
+		function setLocation(args) {
+			doLMSSetValue("cmi.core.lesson_location", args);
+		}
+
+		function setSuspenddata(args) {
+			doLMSSetValue("cmi.suspend_data", args);
+		}
+
+		function setprogressdata(args) {
+			doLMSSetValue("cmi.core.lesson_progress", args);
+		}
+
+		function SetComplete() {
+			currentstatus = "completed";
+			doLMSSetValue("cmi.core.lesson_status", currentstatus);
+		}
+
+		function setScore(args) {
+			doLMSSetValue("cmi.core.score.raw", args);
+		}
+
+		function closeWindow() {
+			window.open('', '_self', '');
+			window.close();
+		}
+
+		function alertClose() {
+			if(navigator.appName.indexOf("Microsoft") == -1) {
+				window.otherFlash.windowClose();
+			} else {
+				window.ieFlash.windowClose();
+			}
+			doQuit();
+		}
+
+		function flashInitComplete() {
+			RightClick.init();
+		}
+	</script>
+
+	<body onunload="alertClose();" onbeforeunload="alertClose();">
+		<div class="table">
+			<div class="table-cell">
+				<div id="flashContent" align="center" style="vertical-align:middle">
+					<object id="ieFlash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1024" height="600" id="main" align="middle">
+			            <param name="movie" value="../main/main.swf" />
+			            <param name="quality" value="high" />
+			            <param name="bgcolor" value="#ffffff" />
+			            <param name="play" value="true" />
+			            <param name="loop" value="true" />
+			            <param name="wmode" value="opaque" />
+			            <param name="scale" value="showall" />
+			            <param name="menu" value="true" />
+			            <param name="devicefont" value="false" />
+			            <param name="salign" value="" />
+			            <param name="allowScriptAccess" value="sameDomain" />
+				    	<param name="FlashVars" value="courseType=scorm" />
+			            <param name="allowFullScreen" value="true" />
+			            <!--[if !IE]>-->
+			            <object id="otherFlash" type="application/x-shockwave-flash" data="../main/main.swf" width="1024" height="600">
+			                <param name="movie" value="../main/main.swf" />
+			                <param name="quality" value="high" />
+			                <param name="bgcolor" value="#ffffff" />
+			                <param name="play" value="true" />
+			                <param name="loop" value="true" />
+			                <param name="wmode" value="opaque" />
+			                <param name="scale" value="showall" />
+			                <param name="menu" value="true" />
+			                <param name="devicefont" value="false" />
+			                <param name="salign" value="" />
+			                <param name="allowScriptAccess" value="always" />
+			                <param name="allowFullScreen" value="true" />
+							<param name="FlashVars" value="courseType=scorm" />
+			            <!--<![endif]-->
+			                <a href="http://www.adobe.com/go/getflash">
+			                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获得 Adobe Flash Player" />
+			                </a>
+			            <!--[if !IE]>-->
+			            </object>
+					<!--<![endif]-->
+					</object>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

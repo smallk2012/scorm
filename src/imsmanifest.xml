@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-B58759047861EEAB826565F31C995A66" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="starbucks_cwbx_v1">
+    <organization identifier="starbucks_cwbx_v1" structure="hierarchical">
+      <title>上海中心多媒体读物</title>
+      <item identifier="cc01" identifierref="res_cc01" isvisible="true">
+        <title>上海中心多媒体读物</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="res_cc01" type="webcontent" href="html/default.html" adlcp:scormtype="sco">
+      <file href="html/default.html" />
+    </resource>
+  </resources>
+</manifest>
+

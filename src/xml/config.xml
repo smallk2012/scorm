@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data sw="1024" sh="600" cx="0" cy="44" record="0" score="60" test="0#1,1,1,1,1,1,1,0,0,0,0,0,0,1#incomplete#0#0">
+	<ToolMc x="114" y="546">
+		<MuluBtn visible="1" x="10" y="3"></MuluBtn>
+		<PrevBtn visible="1" x="50" y="7"></PrevBtn>
+		<PlayBtn visible="1" x="82" y="7"></PlayBtn>
+		<NextBtn visible="1" x="114" y="7"></NextBtn>
+		<JinduMc visible="1" x="144" y="0">
+			<JinduBarBg x="0" y="13"></JinduBarBg>
+			<JinduBar x="0" y="13"></JinduBar>
+			<JinduBtn>
+				<JinduBtnTime visible="1" fixed="1" x="-30" y="-40"></JinduBtnTime>
+			</JinduBtn>
+		</JinduMc>
+		<TimeTip visible="1" x="470" y="5"></TimeTip>
+		<PageTip visible="1" x="570" y="5"></PageTip>
+		<SoundMc visible="1" x="625" y="0" volume="0.2" direction="h">
+			<SoundIcon x="0" y="7"></SoundIcon>
+			<SoundBar x="20" y="7"></SoundBar>
+			<SoundBtn></SoundBtn>
+		</SoundMc>
+		<BsoundMc visible="1" x="765" y="7" volume="0.5" initsound="0"></BsoundMc>
+	</ToolMc>
+	<MuluMc visible="0" clicknext="0" y="110">
+		<MuluMcNavAreaBg x="0" y="20"></MuluMcNavAreaBg>
+		<MuluMcScrollBarBg x="255" y="20"></MuluMcScrollBarBg>
+		<MuluMcScrollBar></MuluMcScrollBar>
+	</MuluMc>
+	<Alert>
+		<NoLearn>先学习完当前课程</NoLearn>
+		<Scorm>不符合Scorm标准课件</Scorm>
+		<Update>课件更新</Update>
+		<Error>课程无法读取</Error>
+		<Copyright>by cC 出品</Copyright>
+	</Alert>
+</data>

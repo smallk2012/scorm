@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<!--
+	lable:标签
+	autonext:是否自动播放下一个
+	filetype:文件类型swf、mp4、flv
+	showtoolbar:是否显示工具条
+	isdrag:-1不能拖拽无进度0不能拖拽1可以拖拽2已学可拖拽
+	catalog：是否目录
+	skin:皮肤012
+	href:文件名字
+	-->
+	<menu lable="启动动画" autonext="0" filetype="swf" showtoolbar="1" isdrag="1" catalog="0" skin="1" href="001"></menu>
+	<menu lable="第一章" autonext="0" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="1" href="001">
+		<menu lable="第一节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="002"></menu>
+		<menu lable="第二节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="001">
+			<menu lable="第二节1小节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="3" href="002"></menu>
+			<menu lable="第二节2小节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="3" href="001"></menu>
+			<menu lable="第二节3小节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="3" href="002"></menu>
+		</menu>
+		<menu lable="第三节" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="001"></menu>
+	</menu>
+	<menu lable="第二章" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="001"></menu>
+	<menu lable="第三章" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="002"></menu>
+	<menu lable="第四章" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="001"></menu>
+	<menu lable="第五章" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="1" skin="2" href="002"></menu>
+	<menu lable="读后感言" autonext="1" filetype="swf" showtoolbar="1" isdrag="1" catalog="0" skin="2" href="001"></menu>
+</data>
