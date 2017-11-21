@@ -43,7 +43,7 @@ package cn.yingzaiqidian.scorm
             var loader:URLLoader = URLLoader(event.target);
 			removeListeners(loader);
 			var obj = { };
-			obj.code = 100;
+			obj.code = 101;
 			obj.msg = "";
 			obj.xml = XML(loader.data);
 			callback && callback(obj);

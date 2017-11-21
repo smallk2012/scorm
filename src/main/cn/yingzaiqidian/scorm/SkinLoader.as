@@ -49,7 +49,7 @@ package cn.yingzaiqidian.scorm
 		private function completeHandler(event:Event):void {
 			removeListeners(loader.contentLoaderInfo);
             var obj = { };
-			obj.code = 100;
+			obj.code = 101;
 			obj.msg = "";
 			callback && callback(obj);
         }
